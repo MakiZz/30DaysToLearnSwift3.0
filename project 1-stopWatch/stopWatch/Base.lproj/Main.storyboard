@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="stopWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h2H-s9-Pjr">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ot3-RI-5qv">
+                                        <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="100"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnO-O6-HBv">
+                                        <state key="normal" title="Reset">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ResetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dpw-lG-ZvZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.021281779981419585" green="0.018104924722202636" blue="0.1851325757575758" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="4QA-s4-BJD"/>
+                                    <constraint firstItem="WnO-O6-HBv" firstAttribute="top" secondItem="h2H-s9-Pjr" secondAttribute="top" constant="42" id="Qam-ny-XCV"/>
+                                    <constraint firstItem="Ot3-RI-5qv" firstAttribute="centerY" secondItem="h2H-s9-Pjr" secondAttribute="centerY" id="aGd-FJ-rbF"/>
+                                    <constraint firstItem="Ot3-RI-5qv" firstAttribute="centerX" secondItem="h2H-s9-Pjr" secondAttribute="centerX" id="p32-Tt-Aog"/>
+                                    <constraint firstAttribute="trailing" secondItem="WnO-O6-HBv" secondAttribute="trailing" constant="50" id="w9F-Nk-dbC"/>
+                                    <constraint firstItem="WnO-O6-HBv" firstAttribute="leading" secondItem="h2H-s9-Pjr" secondAttribute="leading" constant="279" id="zAo-5M-fMj"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uU-5A-5kA">
+                                <color key="backgroundColor" red="0.31764705879999999" green="0.6588235294" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="pause"/>
+                                <connections>
+                                    <action selector="pauseButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2U5-ON-1Ab"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcb-i3-XtI">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="play"/>
+                                <connections>
+                                    <action selector="playButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ucE-HE-Veo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2uU-5A-5kA" firstAttribute="leading" secondItem="xcb-i3-XtI" secondAttribute="trailing" id="3AZ-Xl-BS5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xcb-i3-XtI" secondAttribute="bottom" id="ISm-5E-RiR"/>
+                            <constraint firstAttribute="trailing" secondItem="2uU-5A-5kA" secondAttribute="trailing" id="NfJ-45-nO8"/>
+                            <constraint firstItem="h2H-s9-Pjr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="P21-CT-seH"/>
+                            <constraint firstItem="2uU-5A-5kA" firstAttribute="height" secondItem="xcb-i3-XtI" secondAttribute="height" id="QuB-TK-DEL"/>
+                            <constraint firstItem="2uU-5A-5kA" firstAttribute="width" secondItem="xcb-i3-XtI" secondAttribute="width" id="R71-1N-j9N"/>
+                            <constraint firstAttribute="trailing" secondItem="h2H-s9-Pjr" secondAttribute="trailing" id="bvB-1p-DcA"/>
+                            <constraint firstItem="2uU-5A-5kA" firstAttribute="top" secondItem="h2H-s9-Pjr" secondAttribute="bottom" id="hFg-Yd-HYr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2uU-5A-5kA" secondAttribute="bottom" id="jNX-S8-gtK"/>
+                            <constraint firstItem="xcb-i3-XtI" firstAttribute="top" secondItem="h2H-s9-Pjr" secondAttribute="bottom" id="jgp-q9-kAR"/>
+                            <constraint firstItem="xcb-i3-XtI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tKZ-6Z-DNa"/>
+                            <constraint firstItem="h2H-s9-Pjr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ywD-Xu-JGA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pauseBtn" destination="2uU-5A-5kA" id="Dz2-ul-CZv"/>
+                        <outlet property="playBtn" destination="xcb-i3-XtI" id="fmS-ly-A54"/>
+                        <outlet property="timeLabel" destination="Ot3-RI-5qv" id="TF1-Wz-M3V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pause" width="42" height="56"/>
+        <image name="play" width="48" height="61"/>
+    </resources>
+</document>
