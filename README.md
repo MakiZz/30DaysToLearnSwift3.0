@@ -8,3 +8,9 @@
 ![Alt text](https://github.com/MakiZz/30DaysToLearnSwift3.0/blob/master/project%202-CustomFont/Customfont.gif)
 * 项目3-定义Cell加载本地视频<br>
 ![Alt text](https://github.com/MakiZz/30DaysToLearnSwift3.0/blob/master/project%203-PlayLocalVideo/playvideo.gif)
+* 项目4<br>
+![Alt text](https://github.com/allenwong/30DaysofSwift/blob/master/Project%2004%20-%20SnapChatMenu/snapchatmenu.gif?raw=true)
+* 项目5-轮播图<br>
+![Alt text](https://github.com/allenwong/30DaysofSwift/blob/master/Project%2005%20-%20CarouselEffect/Carousel.gif?raw=true)
+* 项目6-定位<br>
+![Alt text](https://github.com/allenwong/30DaysofSwift/blob/master/Project%2006%20-%20FindMyLocation/mylocation.gif?raw=true)
