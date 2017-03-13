@@ -24,6 +24,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        tableViewController.tableView.frame = CGRect.init(x: 0, y: 64, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 64)
+        
         emojiData = favoriteEmoji
         let emojiTableView = tableViewController.tableView
         
@@ -36,7 +39,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         self.refreshControl.backgroundColor = UIColor(red:0.113, green:0.113, blue:0.145, alpha:1)
         let attributes = [NSForegroundColorAttributeName: UIColor.white]
-        self.refreshControl.attributedTitle = NSAttributedString(string: "Last updated on \(NSDate())", attributes: attributes)
+        self.refreshControl.attributedTitle = NSAttributedString(string: "最近更新: \(NSDate())", attributes: attributes)
         self.refreshControl.tintColor = UIColor.white
         
         self.title = "emoji"
@@ -64,12 +67,12 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         return emojiData.count
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    private func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifer)! as UITableViewCell
         
         cell.textLabel!.text = self.emojiData[indexPath.row]
