@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="project_10___视频背景" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-secondary-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Pd7-94-qGO">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Pd7-94-qGO" secondAttribute="height" multiplier="109:33" id="LZz-hp-qam"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1DD-r3-FHR">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.31764705879999999" green="0.6588235294" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="sign up"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teB-w6-pLE">
+                                <color key="backgroundColor" red="0.31764705879999999" green="0.6588235294" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="LoginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B3G-mn-TNX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1DD-r3-FHR" firstAttribute="width" secondItem="teB-w6-pLE" secondAttribute="width" id="5oi-mh-UJC"/>
+                            <constraint firstItem="1DD-r3-FHR" firstAttribute="top" secondItem="teB-w6-pLE" secondAttribute="bottom" constant="20" id="GYJ-ol-XiO"/>
+                            <constraint firstItem="Pd7-94-qGO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="P3N-qo-8eg"/>
+                            <constraint firstItem="teB-w6-pLE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="WXW-sJ-CFG"/>
+                            <constraint firstItem="Pd7-94-qGO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="boL-Cs-A27"/>
+                            <constraint firstItem="1DD-r3-FHR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gT9-c1-2XQ"/>
+                            <constraint firstItem="teB-w6-pLE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hg6-1E-F6N"/>
+                            <constraint firstItem="teB-w6-pLE" firstAttribute="top" secondItem="Pd7-94-qGO" secondAttribute="bottom" constant="386" id="isu-nB-QcC"/>
+                            <constraint firstAttribute="trailing" secondItem="teB-w6-pLE" secondAttribute="trailing" constant="30" id="mbg-6p-mtC"/>
+                            <constraint firstItem="1DD-r3-FHR" firstAttribute="height" secondItem="teB-w6-pLE" secondAttribute="height" id="s9e-NB-2kA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="SignUpAction" destination="1DD-r3-FHR" id="lCl-R9-6jq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login-secondary-logo" width="218" height="66"/>
+    </resources>
+</document>
