@@ -9,16 +9,6 @@
 import UIKit
 
 
-class objc: NSObject {
-    
-    func test(){
-        
-        
-        
-    }
-    
-}
-
 class ViewController: UIViewController,UIScrollViewDelegate {
 
     var imageView: UIImageView!
