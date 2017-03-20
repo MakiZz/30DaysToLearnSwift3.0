@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ses-by-EbD">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="pcL-nK-eRG">
+            <objects>
+                <viewController id="Ses-by-EbD" customClass="ViewController" customModule="project_14___emoji老虎机" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H4n-Fd-dNY"/>
+                        <viewControllerLayoutGuide type="bottom" id="xwU-ri-xLC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g6S-R6-qfo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hyperspace" translatesAutoresizingMaskIntoConstraints="NO" id="HUt-nG-ewq"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvf-bi-jda">
+                                <color key="backgroundColor" red="0.6689732075" green="1" blue="0.034617960449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Tp2-ro-3pI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="GO"/>
+                                <connections>
+                                    <action selector="goAction:" destination="Ses-by-EbD" eventType="touchUpInside" id="y4e-zH-6wd"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Lp-7M-rCE"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bingo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDS-GJ-ejD">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="acD-U6-IV3"/>
+                                    <constraint firstAttribute="width" constant="375" id="iRO-rr-nLy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.99988853929999999" green="0.99998223779999995" blue="0.99983125930000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="iRO-rr-nLy"/>
+                                        <exclude reference="acD-U6-IV3"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lvf-bi-jda" firstAttribute="centerX" secondItem="HUt-nG-ewq" secondAttribute="centerX" id="1VI-nl-XQ7"/>
+                            <constraint firstItem="JDS-GJ-ejD" firstAttribute="top" secondItem="lvf-bi-jda" secondAttribute="bottom" constant="83" id="84x-TC-Upo"/>
+                            <constraint firstItem="HUt-nG-ewq" firstAttribute="top" secondItem="g6S-R6-qfo" secondAttribute="top" id="9y8-4m-IuP"/>
+                            <constraint firstItem="6Lp-7M-rCE" firstAttribute="top" secondItem="H4n-Fd-dNY" secondAttribute="bottom" constant="181" id="DcW-r1-poX"/>
+                            <constraint firstItem="JDS-GJ-ejD" firstAttribute="leading" secondItem="g6S-R6-qfo" secondAttribute="leading" id="Fwb-4G-w16"/>
+                            <constraint firstItem="lvf-bi-jda" firstAttribute="top" secondItem="6Lp-7M-rCE" secondAttribute="bottom" constant="41" id="L6m-6D-lqZ"/>
+                            <constraint firstItem="6Lp-7M-rCE" firstAttribute="leading" secondItem="g6S-R6-qfo" secondAttribute="leadingMargin" constant="-19" id="Lz4-u3-L0w"/>
+                            <constraint firstItem="HUt-nG-ewq" firstAttribute="leading" secondItem="g6S-R6-qfo" secondAttribute="leading" id="Pok-Rc-ktC"/>
+                            <constraint firstAttribute="trailing" secondItem="JDS-GJ-ejD" secondAttribute="trailing" id="V9k-h8-ZRC"/>
+                            <constraint firstAttribute="bottom" secondItem="HUt-nG-ewq" secondAttribute="bottom" id="Wby-0J-OwT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Lp-7M-rCE" secondAttribute="trailing" constant="-21" id="aqj-IZ-uuj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Lp-7M-rCE" secondAttribute="trailing" constant="-17" id="clF-PV-o0M"/>
+                            <constraint firstItem="JDS-GJ-ejD" firstAttribute="top" secondItem="lvf-bi-jda" secondAttribute="bottom" constant="82" id="dFi-7G-87B"/>
+                            <constraint firstItem="HUt-nG-ewq" firstAttribute="centerY" secondItem="g6S-R6-qfo" secondAttribute="centerY" id="eTt-OQ-F68"/>
+                            <constraint firstItem="JDS-GJ-ejD" firstAttribute="centerX" secondItem="g6S-R6-qfo" secondAttribute="centerX" id="hlM-q2-xQt"/>
+                            <constraint firstItem="lvf-bi-jda" firstAttribute="leading" secondItem="g6S-R6-qfo" secondAttribute="leadingMargin" constant="11" id="hn2-dD-i2Y"/>
+                            <constraint firstItem="HUt-nG-ewq" firstAttribute="centerX" secondItem="g6S-R6-qfo" secondAttribute="centerX" id="lKA-2e-82P"/>
+                            <constraint firstItem="6Lp-7M-rCE" firstAttribute="centerX" secondItem="JDS-GJ-ejD" secondAttribute="centerX" id="lhn-VY-YYs"/>
+                            <constraint firstItem="xwU-ri-xLC" firstAttribute="top" secondItem="JDS-GJ-ejD" secondAttribute="bottom" constant="54" id="liR-8D-0jd"/>
+                            <constraint firstItem="6Lp-7M-rCE" firstAttribute="leading" secondItem="g6S-R6-qfo" secondAttribute="leadingMargin" constant="-15" id="mOV-Bg-GBy"/>
+                            <constraint firstItem="JDS-GJ-ejD" firstAttribute="centerX" secondItem="6Lp-7M-rCE" secondAttribute="centerX" constant="-1" id="ndE-cP-70m"/>
+                            <constraint firstAttribute="bottom" secondItem="lvf-bi-jda" secondAttribute="bottom" constant="197" id="oxP-wX-Ss2"/>
+                            <constraint firstAttribute="trailing" secondItem="HUt-nG-ewq" secondAttribute="trailing" id="pVo-UX-YYg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="clF-PV-o0M"/>
+                                <exclude reference="lhn-VY-YYs"/>
+                                <exclude reference="mOV-Bg-GBy"/>
+                                <exclude reference="dFi-7G-87B"/>
+                                <exclude reference="hlM-q2-xQt"/>
+                                <exclude reference="oxP-wX-Ss2"/>
+                                <exclude reference="liR-8D-0jd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="emojiPickerView" destination="6Lp-7M-rCE" id="NgP-Np-dOr"/>
+                        <outlet property="goBtn" destination="lvf-bi-jda" id="XdV-Ii-mqp"/>
+                        <outlet property="resultLabel" destination="JDS-GJ-ejD" id="gQG-IR-ytn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eh1-a6-odp" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="203"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hyperspace" width="621" height="1104"/>
+    </resources>
+</document>
