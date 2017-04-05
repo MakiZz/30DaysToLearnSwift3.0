@@ -46,5 +46,5 @@
 ![Alt text](https://github.com/allenwong/30DaysofSwift/blob/master/Project%2021%20-%20SwipeableCell/Swipeable%20Cell.gif?raw=true)
 
 
-## 这次练手暂时先到这吧，后面的4个项目不是常用的tabbar就是三方库暂时先不敲了。
-## 练完这几个项目稍微对swift3 加深了点印象，项目中 元祖，闭包 好像涉及的也比较少，还有 as 也理解的不是很透彻。总得来说还需多学习吧
+ 这次练手暂时先到这吧，后面的4个项目不是常用的tabbar就是三方库暂时先不敲了。
+ 练完这几个项目稍微对swift3 加深了点印象，项目中 元祖，闭包 好像涉及的也比较少，还有 as 也理解的不是很透彻。总得来说还需多学习吧
